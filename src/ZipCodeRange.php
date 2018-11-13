@@ -10,6 +10,7 @@ use Illuminate\Support\Carbon;
  * Class ZipCodeRange
  *
  * @property-read string $description
+ * @property-read string $correios_service_code
  * @property-read int $zip_code_start
  * @property-read int $zip_code_end
  * @property-read float $amount
