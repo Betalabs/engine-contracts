@@ -8,5 +8,6 @@ interface ZipCodeRangeCalculator
     public function setZipCode(string $zipCode);
     public function setItemsIds(array $itemsIds);
     public function setQuantities($quantities);
+    public function setChannels(array $channels);
     public function calculate();
 }
