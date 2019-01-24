@@ -12,6 +12,18 @@ interface PaymentMethod
     public function getKey();
 
     /**
+     * Get payment method's name to describe them.
+     */
+    public function getName();
+
+    /**
+     * Get PaymentGateway related to this PaymentMethod instance.
+     *
+     * @return \Betalabs\Engine\Contracts\PaymentGateway|null
+     */
+    public function getPaymentGateway();
+
+    /**
      * Returns true if type is bank slip.
      *
      * @return bool
