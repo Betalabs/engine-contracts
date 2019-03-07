@@ -16,9 +16,9 @@ interface PaymentGateway extends Configurable
      *
      * @param string $name
      *
-     * @return string|null
+     * @return string
      * @throws \Betalabs\Engine\Contracts\ApiKeyNotFoundException
      * @throws \Betalabs\Engine\Contracts\GatewayInactivatedException
      */
-    public function getApiKey(string $name);
+    public static function getApiKey(string $name);
 }
