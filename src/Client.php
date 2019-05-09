@@ -45,4 +45,18 @@ interface Client
      * @return string
      */
     public function getFullName();
+
+    /**
+     * Return if the client is natural or legal person.
+     *
+     * @return boolean
+     */
+    public function isEmployer();
+
+    /**
+     * Return the document number of this legal or natural person.
+     *
+     * @return string
+     */
+    public function getDocumentNumber();
 }

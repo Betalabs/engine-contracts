@@ -24,4 +24,25 @@ interface Address
      * @return string
      */
     public function getZipCode();
+
+    /**
+     * Get address neighborhood.
+     *
+     * @return mixed
+     */
+    public function getNeighborhood();
+
+    /**
+     * Get address city.
+     *
+     * @return mixed
+     */
+    public function getCity();
+
+    /**
+     * Get address state.
+     *
+     * @return mixed
+     */
+    public function getState();
 }

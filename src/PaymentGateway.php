@@ -12,7 +12,7 @@ interface PaymentGateway extends Configurable
     public function getIntegratorClassPath();
 
     /**
-     * Get API key by gateway name. If neither exists or is not set could return null
+     * Get API key by gateway name. If neither exists or is not set could return null.
      *
      * @param string $name
      *
@@ -21,4 +21,13 @@ interface PaymentGateway extends Configurable
      * @throws \Betalabs\Engine\Contracts\GatewayInactivatedException
      */
     public static function getApiKey(string $name);
+
+    /**
+     * Get postback url by gateway name.
+     *
+     * @param string $name
+     * @return string
+     * @throws \Betalabs\Engine\Contracts\GatewayInactivatedException
+     */
+    public static function getPostbackUrl(string $name);
 }
