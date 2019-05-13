@@ -26,9 +26,8 @@ interface PaymentGateway extends Configurable
      * Get postback url by gateway name and token of the transaction.
      *
      * @param string $gatewayName
-     * @param string $token
      * @return string
      * @throws \Betalabs\Engine\Contracts\GatewayInactivatedException
      */
-    public static function getPostbackUrl(string $gatewayName, string $token);
+    public static function getPostbackUrl(string $gatewayName);
 }
