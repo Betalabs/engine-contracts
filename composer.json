@@ -11,9 +11,9 @@
   ],
   "require": {
     "php": ">=7.2",
-    "illuminate/database": "5.6.*|5.7.*",
-    "illuminate/support": "5.6.*|5.7.*",
-    "symfony/http-kernel": "^4.1"
+    "illuminate/database": "5.6.*|5.7.*|5.8.*",
+    "illuminate/support": "5.6.*|5.7.*|5.8.*",
+    "symfony/http-kernel": "^4.3"
   },
   "autoload": {
     "psr-4": {
