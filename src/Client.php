@@ -59,4 +59,11 @@ interface Client
      * @return string
      */
     public function getDocumentNumber();
+
+    /**
+     * Return the client registration date
+     *
+     * @return string
+     */
+    public function getRegistrationDate();
 }
