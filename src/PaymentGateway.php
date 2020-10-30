@@ -12,6 +12,14 @@ interface PaymentGateway extends Configurable
     public function getIntegratorClassPath();
 
     /**
+     * Some payment gateways allow not inform explicitly payment details.
+     * Then bills can be charged using lastest customer payment profile.
+     *
+     * @return bool
+     */
+    public function isAllowedNotInformExplicitlyPaymentDetails(): bool;
+
+    /**
      * Get API key by gateway name. If neither exists or is not set could return null.
      *
      * @param string $gatewayName
