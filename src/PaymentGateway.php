@@ -38,6 +38,17 @@ interface PaymentGateway extends Configurable
      * @throws \Betalabs\Engine\Contracts\GatewayInactivatedException
      */
     public static function getPostbackUrl(string $gatewayName);
+
+    /**
+     * Get configuration value by key.
+     *
+     * @param string $key
+     * @param null   $default
+     *
+     * @return string
+     * @throws \Betalabs\Engine\Contracts\GatewayInactivatedException
+     */
+    public static function getConfigurationValue(string $key, $default = null);
     
     /**
      * Find payment gateway instance using PascalCaseName.
