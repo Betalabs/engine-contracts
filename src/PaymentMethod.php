@@ -64,4 +64,11 @@ interface PaymentMethod
      * @return bool
      */
     public function isNonTransparentCheckout();
+
+    /**
+     * Returns true if type is PIX.
+     *
+     * @return bool
+     */
+    public function isPix();
 }
