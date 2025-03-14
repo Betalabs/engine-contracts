@@ -19,6 +19,13 @@ interface Address
     public function getNumber();
 
     /**
+     * Get complement
+     *
+     * @return string
+     */
+    public function getComplement();
+
+    /**
      * Get address zip code.
      *
      * @return string

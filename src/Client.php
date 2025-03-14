@@ -33,6 +33,13 @@ interface Client
     public function getFirstName();
 
     /**
+     * Get birthdate.
+     *
+     * @return string
+     */
+    public function getBirthDate();
+
+    /**
      * Get second client name.
      *
      * @return string
