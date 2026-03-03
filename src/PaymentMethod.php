@@ -71,4 +71,11 @@ interface PaymentMethod
      * @return bool
      */
     public function isPix();
+
+    /**
+     * Returns true if enable antifraud for credit card.
+     *
+     * @return bool
+     */
+    public function isAntifraudAllowedCreditCard();
 }
