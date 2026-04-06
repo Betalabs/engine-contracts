@@ -73,6 +73,13 @@ interface PaymentMethod
     public function isPix();
 
     /**
+     * Returns true if type is voucher.
+     *
+     * @return bool
+     */
+    public function isVoucher();
+
+    /**
      * Returns true if enable antifraud for credit card.
      *
      * @return bool
